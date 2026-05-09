@@ -1,29 +1,25 @@
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import ProductStory from "./components/ProductStory";
-import Features from "./components/Features";
-import HowItWorks from "./components/HowItWorks";
-import SocialProof from "./components/SocialProof";
-import UseCases from "./components/UseCases";
-import Pricing from "./components/Pricing";
-import FinalCTA from "./components/FinalCTA";
-import Footer from "./components/Footer";
+import Masthead from "./components/Masthead";
+import FeatureArticle from "./components/FeatureArticle";
+import RoomsSpread from "./components/RoomsSpread";
+import VisitNotes from "./components/VisitNotes";
+import ServiceMenu from "./components/ServiceMenu";
+import Subscribe from "./components/Subscribe";
+import Almanac from "./components/Almanac";
+import Colophon from "./components/Colophon";
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-bg text-ink overflow-x-clip">
-      <Navbar />
+    <div className="min-h-screen paper-grain text-ink">
+      <Masthead />
       <main>
-        <Hero />
-        <ProductStory />
-        <Features />
-        <HowItWorks />
-        <SocialProof />
-        <UseCases />
-        <Pricing />
-        <FinalCTA />
+        <FeatureArticle />
+        <RoomsSpread />
+        <ServiceMenu />
+        <VisitNotes />
+        <Almanac />
+        <Subscribe />
       </main>
-      <Footer />
+      <Colophon />
     </div>
   );
 }
